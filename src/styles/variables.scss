@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;700;900&display=swap');
+@import "~bootstrap/dist/css/bootstrap.css";
+$primary: #000;
+
+* {
+	font-family: 'Work Sans', sans-serif;
+}
+body {
+	background-color: #fff;
+	height:100%;
+	text-align: center;
+	font-family: 'Work Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,p {
+	margin-top:0 !important;
+}
+h1 {
+	font-weight: 900 !important;
+	font-size: 62px !important;
+	@media screen and (max-width: 375px) {
+		font-size: 52px !important;
+		line-height: 51px !important;
+	}
+}
+h2{
+	font-size: 32px !important;
+	font-weight: 900 !important;
+	margin:0 !important; 
+	@media screen and (max-width: 375px) {
+		line-height: 38px !important;
+	}
+}
+h3 {
+	font-style: italic;
+	line-height: 24.63px;
+	font-size:21px !important;
+	margin-bottom:0 !important;
+	@media screen and (max-width: 375px) {
+		font-size: 16px !important;
+		line-height: 18.77px;
+	}
+}
+h4 {
+	font-size: 18px !important;
+	font-weight: 400 !important;
+	@media screen and (max-width: 375px) {
+	font-size:16px !important;
+	line-height:24px !important;
+	letter-spacing: -0.571429px;
+	}
+}
+h5 {
+	font-size:16px !important;
+	font-weight: 700 !important;
+}
+h6 {
+	font-size: 14px !important;
+}
+p {
+	font-size: 12px !important;
+	line-height: 14px;
+	font-weight: 400;
+	letter-spacing: -0.428571px;
+}
+
+li {
+  list-style: none;
+}
+

@@ -1,0 +1,359 @@
+@import "./variables.scss";
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.header-container {
+	background-color: #fff;
+	.navbar{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		margin:0;
+		padding:0 213px;
+		height:67px;
+		@media screen and (max-width: 375px) {
+		padding:0 24px;
+		width:375px;
+			img {
+				height:17px;
+				width:17px;
+			}
+		} 
+		img {
+			height:33px;
+			width:33px;
+		}
+		.nav-text {
+			margin:0 13px;
+			text-align:left;
+			p, h5 {
+				margin:0;
+			}
+		}
+	}
+}
+
+.view-container {
+	background-color: #EEBECE;
+	background-image: url(./img/BG_1.png);
+	color:#fff;
+	height: 725px;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	@media screen and (max-width: 375px) {
+		background-color: #EEBECE;
+		background-image: url(./img/bg_mobile.png);
+		height:600px;
+		width:375px;
+		text-align: center;
+	}
+	.viewImg{
+		display:inline-block;
+		position: relative;
+		img {
+			margin-top:67px;
+			height:305px;
+			width:184px;
+		}
+		.btn {
+			position: absolute;
+			font-size: 16px;
+			bottom:47px;
+			left:-12%;
+			width:231px;
+			height:58px;
+			border-radius: 29px;
+			border-color: #fff;
+			box-shadow: 0px 20px 30px rgba(249, 131, 171, 0.5);
+			background-color: #fff;
+		}
+	}
+	
+}
+
+.view2-container {
+	display: block;
+	height: 750px;
+	text-align: right;
+	background: linear-gradient( to bottom, #eebece 73%,#000 27%);
+	@media screen and (max-width: 375px) {
+		height:700px;
+		width:375px;
+		background: linear-gradient( to bottom, #eebece 90%,#000 10%);
+	}
+	img {
+		height:auto;
+		right:0;
+		width: 158px;
+	}
+	.view2-quote {
+		align-self: center;
+		margin:50px 350px;
+		height:160px;
+		@media screen and (max-width: 375px) {
+			margin:50px 32px;
+			height:245px;
+		}
+		h3{
+			font-style: normal;
+			line-height: 24px;
+			letter-spacing: -0.57px;
+			color:#000;
+		}
+		h3:nth-child(3) {
+			padding-top:10px;
+		}
+	}
+}
+.circle-bg {
+	position: absolute;
+	background-color: #0B24FB;
+	width:89px;
+	height:89px;
+	border-radius: 50%;
+	left:283px;
+	z-index: -2;
+	top:-10%;
+	@media screen and (max-width: 375px) {
+		left:57px;
+		top:-9%;
+	}
+}
+
+.testimonial-div {
+	text-align: center;
+	color:#fff;
+	padding-top:20px;
+	position: relative;
+	z-index:1;
+	@media screen and (max-width: 375px) {
+		text-align: left;
+		padding-left:32px;
+	}
+	.carousel-testi {
+		margin: 30px 10% 67px 10%;
+		position: relative;
+		@media screen and (max-width: 375px) {
+			margin:0;
+			padding-top:30px;
+			width:90%;
+			height:500px;
+			margin:auto;
+		}
+		.arrow {
+			background-color: #595959;
+			position: absolute;
+			width:32px;
+			height:32px;
+			border-radius: 50%;
+			margin:5% 15%;
+		@media screen and (max-width: 375px) {
+			display: none;
+		}
+		.carousel-control-prev-icon,
+		.carousel-control-next-icon {
+			width:11px;
+			height:11px;
+		}
+		}
+		.cards-container {
+			margin:auto;
+			max-width: 621px;
+			max-height:140px;
+			display:flex;
+			overflow: hidden;
+			.slider-card{
+				text-align:left;
+				min-width:247px;
+				height: 140px;
+				margin-right:10px;
+				.card-body {
+					background-color: #fff;
+					color:#000;
+					padding:20px;
+					h2{
+						padding-bottom:20px;
+					}
+				}
+			}
+		}
+	}
+}
+
+//POV,Resources & Help Tips
+.view3-container{
+	position: relative;
+	background-color: #000;
+	color:#fff;
+	margin:auto;
+	padding:0;
+	@media screen and (max-width: 375px) {
+		width:375px;
+		padding:100px 32px 0 32px;
+		margin:0;
+	}
+	.text-div {
+		text-align:center;
+		margin:0 374px;
+		padding-bottom: 67px; 
+		@media screen and (max-width: 375px) {
+			text-align: left;
+			margin:0;
+			width:311px;
+		}
+		h2 {
+			padding-bottom: 30px;
+		}	
+}
+.last {
+	padding-bottom: 207px; 
+	@media screen and (max-width: 375px) {
+		padding-bottom: 67px; 
+	}
+}
+.tips-div {
+	padding-bottom: 67px;
+	position: relative;
+	@media screen and (max-width: 375px) {
+		text-align: left;
+		margin:0;
+		width:311px;
+	}
+	h2 {
+		text-align: center;
+		padding-bottom:30px;
+	}
+	align-items: center;
+	width:953px;
+	margin:0 auto;
+}
+	.tips-cards {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: left;
+		line-height: 18.77px;
+		letter-spacing: -0.57px;
+		@media screen and (max-width: 375px) {
+			display:block;
+		}
+		.card-tip {
+			border:none;
+			width: 311px;
+			height: 176px;
+			margin-right:10px;
+			margin-bottom:10px;
+			img {
+				width:100%;
+				height:100%;
+			}
+			.tip-text {
+				display:flex;
+				flex-direction: row;
+				position: absolute;
+				bottom:0;
+				left:0;
+				width:100%;
+				height:72px;
+				color:#fff;
+				padding:17px 25px;
+				background: rgba(black, 0.5);
+				svg {
+					background-color: #fff;
+					color:#6B7CFD;
+					padding: 10px;
+					border-radius: 50%;
+					height:32px;
+					width:32px;
+				}
+			}
+		}
+	}
+}
+// Background Image
+.jelly-bg {
+	position: absolute;
+	right:-8%;
+	top:0;
+	@media screen and (max-width: 375px) {
+		display:none;
+	}
+}
+.bottom-img{
+	position: absolute;
+	left:0;
+	bottom:0px;
+	@media screen and (max-width: 375px) {
+		width:250px;
+		height:300px;
+		display:flex;
+		position: relative;
+		left:-15%;
+		bottom:0;
+	}
+}
+//Footer
+.footer {
+	background-color: #0B24FB;
+	color:#fff;
+	height:67px;
+	padding: 24px 0;
+	.navfoot {
+		padding:0 213px;
+		p{
+			border: 1px solid #FFFFFF;
+			box-sizing: border-box;
+			border-radius: 12px;
+			padding:3px 9px;
+			font-size:10px !important;
+			line-height: 11.73px;
+		}
+	}
+}
+@media screen and (max-width: 375px) {
+	.footer {
+		height:67px;
+		width:375px;
+		padding: 26px 0;
+		.navfoot {
+			padding:0 24px;
+			p{
+				margin:0;
+			}
+		}
+	}
+}
+//Carousel
+.testi-main {
+	width: 600px;
+	padding-top: 30px;
+	margin:10px;
+	.testi-slide {
+		width: 700px;
+		color: #000000;
+		padding:0 20px;
+		.card-body{
+			text-align: left;
+			.card-title {
+				padding-bottom:20px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 375px) {
+	.testi-main {
+		padding:0 !important;
+		margin-top:30px !important;
+		.testi-slide.container {
+			padding:0 !important;
+			width:100%;
+			button {
+				display:none !important;
+			}
+		}
+	}
+}
